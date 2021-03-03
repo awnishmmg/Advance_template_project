@@ -1,0 +1,23 @@
+{
+	"index":{
+		"title":"Admin Dashboard",
+		"bread_title":"Admin/Dashboard"
+	},
+	"admin/raw-uploads":{
+		"title":"Admin Dashboard",
+		"bread_title":"Administator Dashboard"
+	},
+	"raw-uploads":{
+		"title":"Mobile Numbers Filter",
+		"bread_title":"Filter Phones No"
+	},
+	"web-app/login":{
+		"title":" Login In ",
+		"bread_title":"Login "
+	},
+	"user/dashboard":{
+		"title":" Miss Call User ",
+		"bread_title":"Miss-call Dashboard",
+		"bread_link":"Quick Audits"
+	}
+}

@@ -1,0 +1,11 @@
+RewriteEngine On
+php_value include_path '../'
+DirectoryIndex index.php index.html
+
+#All Rewrite Rules
+RewriteRule ^(activity)$ activity.php [L,QSA]
+RewriteRule ^(dashboard)$ dashboard.php [L,QSA]
+RewriteRule ^(profile)$ profile.php [L,QSA]
+RewriteRule ^(assign-misscall)$ assign-misscall.php [L,QSA]
+RewriteRule ^(assign-misscall)$ assign-misscall.php [L,QSA]
+

@@ -1,0 +1,35 @@
+RewriteEngine On
+php_value include_path '../'
+
+#Rewrite Rules
+
+#Partners Section
+
+RewriteRule ^(partners)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-/]+)$ partners.php?_method=$2&_values=$3 [L,QSA]
+RewriteRule ^(partners)/([a-zA-Z0-9\-]+)$ partners.php?_method=$2 [L,QSA]
+
+#Uploading Section
+RewriteRule ^(raw-uploads)$ raw-uploads.php [L,QSA]
+RewriteRule ^(uploads)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-/]+)$ uploads.php?_method=$2&_values=$3 [L,QSA]
+RewriteRule ^(uploads)/([a-zA-Z0-9\-]+)$ uploads.php?_method=$2 [L,QSA]
+
+#manage-miscall
+
+RewriteRule ^(manage-misscall)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-/]+)$ manage-misscall.php?_method=$2&_values=$3 [L,QSA]
+RewriteRule ^(manage-misscall)/([a-zA-Z0-9\-]+)$ manage-misscall.php?_method=$2 [L,QSA]
+
+
+#dashboard
+
+RewriteRule ^(dashboard)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-/]+)$ dashboard.php?_method=$2&_values=$3 [L,QSA]
+RewriteRule ^(dashboard)/([a-zA-Z0-9\-]+)$ dashboard.php?_method=$2 [L,QSA]
+
+#manage-user
+
+RewriteRule ^(manage-user)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-/]+)$ manage-user.php?_method=$2&_values=$3 [L,QSA]
+RewriteRule ^(manage-user)/([a-zA-Z0-9\-]+)$ manage-user.php?_method=$2 [L,QSA]
+
+#department
+
+RewriteRule ^(department)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-/]+)$ department.php?_method=$2&_values=$3 [L,QSA]
+RewriteRule ^(department)/([a-zA-Z0-9\-]+)$ department.php?_method=$2 [L,QSA]

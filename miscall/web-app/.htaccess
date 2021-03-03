@@ -1,0 +1,15 @@
+RewriteEngine On
+php_value include_path './'
+php_value auto_prepend_file 'hooks/prepend.php'
+php_value auto_append_file 'hooks/append.php'
+DirectoryIndex index.php index.html
+
+#Rewrite Rules for All Files
+RewriteRule ^(raw-uploads)$ raw-uploads.php
+RewriteRule ^(dashboard)$ dashboard.php
+RewriteRule ^(login)$ login.php [L,QSA]
+RewriteRule ^(index)$ index.php [L,QSA]
+
+
+
+
